@@ -6,8 +6,7 @@ namespace Lucas
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Insert a int");
-            int n = int.Parse(Console.ReadLine());
+            int n = int.Parse(args[0]);
             Console.WriteLine($"Lucas de {n} = {Lucas(n)}");
         }
         private static int Lucas(int n)
